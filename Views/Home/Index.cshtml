@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model OktaDependencyInjection.Models.HomeModel
+
+
+<h3>@Model.ApplicationName</h3>
+
+<h4>A small demonstration of Dependency Injection in DotNet 5</h4>
+
+<p>
+    Written by <a href="https://profile.fishbowlllc.com" target="_blank" rel="noreferrer">Nik Fisher</a> <br />
+    Secured with <a href="https://www.okta.com/" target="_blank" rel="noreferrer">Okta</a>
+</p>
+
+<h3>My Current List of Users</h3>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Username</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    @foreach (var user in Model.Users)
+    {
+        <tr>
+            <td>@user.Profile.Email</td>
+            <td>@user.Status</td>
+        </tr>
+    }
+</table>
