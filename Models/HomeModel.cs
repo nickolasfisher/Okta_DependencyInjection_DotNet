@@ -1,6 +1,4 @@
 ﻿using Okta.Sdk;
-
-using System;
 using System.Collections.Generic;
 
 namespace OktaDependencyInjection.Models

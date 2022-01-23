@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace OktaDependencyInjection.Services
+﻿namespace OktaDependencyInjection.Services
 {
     public class NumberOfHitsService : Interfaces.INumberOfHitsService
     {
